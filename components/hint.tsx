@@ -33,5 +33,5 @@ export const Hint = ({
                 </TooltipContent>
             </Tooltip>
         </TooltipProvider>
-    )
-}
+    );
+};
