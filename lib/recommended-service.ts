@@ -5,6 +5,7 @@ export const getRecommended = async () => {
     let userId;
     try {
         const self = await getSelf();
+
         userId = self.id;
     } catch {
         userId = null;
@@ -26,6 +27,15 @@ export const getRecommended = async () => {
                             followedBy: {
                                 some: {
                                     followerId: userId,
+                                },
+                            },
+                        },
+                    },
+                    {
+                        NOT: {
+                            blocking: {
+                                some: {
+                                    blockedId: userId
                                 },
                             },
                         },

@@ -2,7 +2,7 @@ import { Wrapper } from "./wrapper";
 import { Toggle, ToggleSkeleton } from "./toggle";
 import { Recommended, RecommendedSkeleton } from "./recommended";
 
-import { getRecommended } from "@/lib/reccomended-service";
+import { getRecommended } from "@/lib/recommended-service";
 import { getFollowedUsers } from "@/lib/follow-service";
 import { Following, FollowingSkeleton } from "./following";
 
